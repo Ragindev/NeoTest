@@ -1,0 +1,106 @@
+.heading{
+  background-image: linear-gradient(to right, #fbb937 ,#f88945);
+  border-radius:10px 10px 0px 0px;
+}
+
+.heading h1{
+  padding : 40px 20px;
+  margin: 0px
+}
+
+.countBox{  
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.activeCount{
+  background-color:white;
+  width:30px;
+  height:30px;
+  border-radius:100%;
+  color:black;
+}
+
+.count{
+  background-color: #fff4;
+  color:white;
+  width:30px;
+  height:30px;
+  border-radius:100%;
+}
+
+.options{
+  background-color: #ffffff;
+  padding:5px;
+  margin:10px;
+}
+
+.quest{
+  margin:5px
+}
+
+.submitdiv{
+  text-align:center;
+padding-bottom:10px;
+}
+
+.submitbtn{
+  text-align:center;
+  background-color: #f77b4a;
+  color:white;
+  width: 100px;
+  height: 45px;
+  
+}
+.clossBtn
+{
+    float: right;
+    cursor: pointer;
+    color: #f77b4a;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px;
+    background: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 6px;
+ 
+}
+.clossBtn {
+  margin:10px;
+  border-radius: 50%;
+  padding: 0.5em;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #f77b4a;
+  color:#fff;
+  position: relative;
+}
+
+
+.clossBtn::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: #f77b4a;
+  width: 2px;
+  left: 12px;
+  top: 5px;
+  bottom: 5px;
+  transform: rotate(45deg);
+}
+.clossBtn::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color:  #f77b4a;
+  height: 2px;
+  top:12px;
+  left: 5px;
+  right: 5px;
+  transform: rotate(45deg);
+}
