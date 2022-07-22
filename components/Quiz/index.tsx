@@ -40,9 +40,8 @@ const Quiz = () => {
   ];
 
   //add a usestate for question change with index
-  const[currentQuestionIndex,setCurrentQuestionIndex]=useState(0);
-  
-  
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+
   return (
     <Center>
       <Card>
@@ -50,11 +49,11 @@ const Quiz = () => {
           <div className={styles.clossBtn}>x</div>
           <h1>This is the quiz heading</h1>
           <div className={styles.countBox}>
-            {["1", "2", "3", "4", "5"].map((count) => {
+            {questionPool.map((_, index) => {
               return (
-                <div className={count === "1" ? styles.activeCount : styles.count}>
+                <div className={index === 0 ? styles.activeCount : styles.count}>
                   <Center>
-                    {count}
+                    <span>{index + 1}</span>
                   </Center>
                 </div>
               )
@@ -62,7 +61,7 @@ const Quiz = () => {
           </div>
         </div>
         {/*pass current question mcq view and display next question in mcq view  */}
-        <McqView {...questionPool[currentQuestionIndex]} onNext={() => setCurrentQuestionIndex(currentQuestionIndex+1) } />
+        <McqView {...questionPool[currentQuestionIndex]} onNext={() => setCurrentQuestionIndex(currentQuestionIndex + 1)} />
       </Card>
     </Center>
   )
