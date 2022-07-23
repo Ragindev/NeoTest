@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './center.module.css'
 import classNames from "classnames";
-// import { cloneElement } from "react/cjs/react.production.min";
 
 const Center = ({
   children,

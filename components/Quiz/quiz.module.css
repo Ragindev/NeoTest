@@ -1,7 +1,9 @@
+.container{
+  padding:5px
+}
+
 .heading{
-/*   background-image: linear-gradient(to right, #fbb937 ,#f88945); */
   background-image: linear-gradient(135deg,hsl(176deg 97% 46%) ,hsl(222deg 98% 52%)); 
-/*   transform: rotate(45deg); */
   border-radius:10px 10px 0px 0px;
 }
 
@@ -16,6 +18,10 @@
   justify-content: space-around;
   padding: 10px;
   font-weight: 500;
+}
+
+.countBox div{
+  cursor:pointer;
 }
 
 .activeCount{
@@ -40,13 +46,15 @@
   margin:10px;
 }
 
-.quest{
-  margin:5px
+.selectedOption{
+  background-image: linear-gradient(270deg,hsl(176deg 97% 46%) ,hsl(222deg 98% 52%)); 
+  color:#fff;
 }
 
 .submitdiv{
-  text-align:center;
-padding-bottom:10px;
+  display:flex;
+  justify-content: space-evenly;
+  padding-bottom:10px;
 }
 
 .submitbtn{
@@ -55,8 +63,8 @@ padding-bottom:10px;
   color:white;
   width: 100px;
   height: 45px;
-  
 }
+
 .clossBtn
 {
     float: right;
